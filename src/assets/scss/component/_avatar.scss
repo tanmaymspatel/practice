@@ -1,0 +1,45 @@
+.avatar-upload .avatar-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid $edit-avatar-border;
+    margin: auto;
+
+    .profilePicture {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.edit-photo {
+    @include media-breakpoint-up(xxl) {
+        padding: 100px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 50px 30px;
+    }
+}
+
+//Dashbord
+.profile-img {
+    height: 60px;
+    width: 60px;
+
+    @include media-breakpoint-down(sm) {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+// My-patients profile avatar.
+.patient-profile {
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,323 @@
+// Form controls styles goes here
+
+.form-floating {
+    .validation-text {
+        display: none;
+    }
+
+    .form-control {
+        &:disabled {
+            color: $text-muted;
+            cursor: not-allowed;
+        }
+
+        ~label {
+            padding: 0.75rem 0 1.5rem 1.5rem;
+            height: auto;
+
+            &>.label-floating-text {
+                background-color: $white;
+                padding: 0 0.25rem;
+                color: $secondary;
+            }
+        }
+
+        &:focus~label>.label-floating-text {
+            color: $primary;
+        }
+    }
+
+    &.invalid {
+        .validation-text {
+            display: block;
+        }
+
+        .form-control {
+            border-color: $danger;
+
+            &:focus,
+            &:not(:placeholder-shown) {
+                ~label>.label-floating-text {
+                    color: $danger;
+                }
+            }
+        }
+    }
+}
+
+.certificate-upload {
+    @include position(absolute, 0, 14px, 0, 14px);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.showsvg {
+    @include position(absolute, 0, 24px, 0, 24px);
+    background-image: url("./../../images/medifylogo.png");
+    z-index: 1000;
+    // cursor: pointer;
+}
+
+// Text ellipsis on media query
+.text-ellipsis {
+    @include media-breakpoint-only(xs) {
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @media (min-width: 375px) and (max-width: 576px) {
+        width: 500px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.text-ellipsis-1 {
+    @include media-breakpoint-up(xl) {
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.password-input-field {
+    .form-control {
+        padding-right: 2rem;
+    }
+}
+
+.bs-datepicker {
+    @include media-breakpoint-down(md) {
+        max-width: 290px;
+    }
+}
+
+//ng-select Container
+.ng-select .ng-select-container {
+    min-height: 22px;
+    border: none;
+    border-color: transparent;
+    box-shadow: none !important;
+}
+
+.ng-select.ng-select-single .ng-select-container {
+    height: 22px;
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+    box-shadow: none;
+}
+
+// List of diseases custom styles
+
+.form-control-checkbox {
+    &:not(:placeholder-shown) {
+        padding-top: 0.625rem !important;
+        margin-bottom: 0.625rem !important;
+    }
+
+    &.ng-select.ng-select-multiple {
+        .ng-select-container {
+            .ng-value {
+                background-color: transparent !important;
+                color: $primary  !important;
+                font-weight: 500 !important;
+                font-size: 0.785rem;
+            }
+
+            .ng-value-icon.left {
+                border-right: none !important;
+            }
+        }
+    }
+
+    .ng-dropdown-panel {
+        border-radius: 10px;
+        padding-top: 0.5rem;
+
+        .ng-option {
+
+            &.ng-option-selected,
+            &.ng-option-selected.ng-option-marked {
+                background-color: transparent !important;
+                color: $primary  !important;
+
+                .ng-option-label {
+                    font-weight: 500 !important;
+                }
+            }
+
+            &.ng-option-marked {
+                background-color: transparent;
+                color: $gray-600;
+            }
+        }
+    }
+}
+
+.ng-dropdown-panel {
+    .ng-dropdown-panel-items {
+        .ng-option {
+            .ng-option-marked {
+                background-color: transparent !important;
+                color: $primary  !important;
+            }
+        }
+    }
+}
+
+// radio check
+.form-check-input {
+    &:checked {
+        box-shadow: inset 0 0 0 0.15rem $white, inset 0 0 0 $primary;
+
+        &+label {
+            color: $primary;
+        }
+    }
+}
+
+// countryCode mobile number input
+.countryCode:before {
+    content: "+91";
+    left: 2px;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {
+    color: $primary  !important;
+    background-color: rgba($primary, 0.2) !important;
+}
+
+.checkbox input:checked {
+    background-color: $primary  !important;
+}
+
+//remove up and down arrows in input type number for chrome, Safari, Edge, Opera
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+//remove up and down arrows in input type number for firefox 
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+//edit-profile-form
+.edit-form {
+    min-height: 100%;
+    
+    &-wrapper {
+        max-width: 900px;
+    }
+}
+
+.institute-certificate-bg {
+    background-color: $institute-certificate-bg  !important;
+}
+
+.doctor-certificate-bg {
+    background-color: $doctor-certificate-bg  !important;
+}
+
+.form-check-small {
+    height: 0.785em;
+    width: 0.785em;
+}
+
+.ft-small {
+    font-size: 0.8em;
+}
+
+.checkbox-size {
+    padding: 0.625rem 0.6rem;
+}
+
+.border-end-light {
+    border-right: 2px solid lighten($primary, 72%);
+}
+
+.bg-primary-light {
+    background-color: lighten($primary, 72%);
+    font-size: 15px;
+}
+
+// input search
+.header-search {
+    background-color: $extra-light;
+    border-radius: 8px;
+    // padding: 12px 20px;
+    // width: 420px;
+
+}
+
+#search {
+    border: none;
+    width: 420px;
+    background-color: $extra-light;
+    font-size: 1rem;
+    padding-left: 3.5rem;
+    transition: all 0.4s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+        padding-left: 0;
+        width: 52px;
+        opacity: 0;
+    }
+
+    &:focus {
+        background-color: $extra-light;
+        padding-left: 3.5rem;
+        opacity: 1;
+
+        @include media-breakpoint-down(md) {
+            width: 300px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 150px;
+        }
+    }
+
+    &::placeholder {
+        color: $secondary;
+    }
+
+
+}
+
+.search-label {
+    @include position($top: 15px);
+
+    @include media-breakpoint-down(sm) {
+        @include position($top: 12px);
+    }
+}
+
+// Google Chart Dropdown
+.form-select-wrapper {
+    &:after {
+        content: "\e902";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 0;
+        right: 2px;
+        color: $secondary;
+        pointer-events: none;
+    }
+
+    .form-select {
+        background-image: none;
+        padding: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

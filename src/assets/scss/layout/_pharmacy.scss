@@ -1,0 +1,168 @@
+// // Author: Himani Barot & Nirali Tandel
+// // Start: Uploaded Prescription & Prescription Status styles.
+// .prescription-wrapper {
+//   border-radius: $layout-radius;
+
+//   @include media-breakpoint-down(lg) {
+//     border-radius: 0;
+//   }
+
+//   .prescription-list {
+//     border-bottom: $list-border-bottom $extra-light;
+
+//     &:last-child {
+//       border: none;
+//     }
+
+//     &:hover {
+//       background-color: $list-item-hover;
+//       transition: all .2s ease-in-out;
+//     }
+
+//     .img-wrapper {
+//       width: $list-profile-size;
+//       height: $list-profile-size;
+
+//       @include media-breakpoint-down(sm) {
+//         width: $list-profile-size-sm;
+//         height: $list-profile-size-sm;
+//         flex-shrink: 0;
+//       }
+
+//       .list-item-image {
+//         max-width: 100%;
+//         height: 100%;
+//       }
+//     }
+
+//     .list-item-name {
+//       font-size: $list-item-font-size;
+
+//       @include media-breakpoint-down(sm) {
+//         font-size: $list-item-font-size-sm;
+//       }
+//     }
+
+//     .patient-name {
+//       font-size: 1.12rem;
+
+//       @include media-breakpoint-down(sm) {
+//         font-size: $list-item-font-size;
+//       }
+//     }
+
+//     .action-date-time {
+//       font-size: $list-item-font-size-sm;
+//     }
+//   }
+// }
+
+
+// .prescription-view-layout {
+//   border-radius: $layout-radius;
+
+//   @include media-breakpoint-down(lg) {
+//     border-radius: 0;
+//   }
+
+//   .view-files {
+//     .view-file-img {
+//       max-width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+// }
+
+// .prescription-view {
+//   border-bottom: 2px solid $extra-light;
+// }
+
+// // End: Uploaded Prescription & Prescription Status styles.
+
+// // @Author: Shreya Patel
+// // Start: pharmacy-view-profile
+// .pharmacyViewProfile {
+//   .profile-info {
+//     border-bottom: $profile-info-border-bottom;
+//   }
+
+//   .profile-info,
+//   .profile-detail {
+//     padding: 1rem;
+
+//     @include media-breakpoint-up(sm) {
+//       padding: 2rem 2rem;
+//     }
+    
+//     @include media-breakpoint-up(md) {
+//       padding: 2rem 4rem;
+//     }
+
+//     @include media-breakpoint-up(xxl) {
+//       padding: 2rem 6rem;
+//     }
+//   }
+// }
+
+// // user-name ellipsis
+// .medical-name {
+//   @include media-breakpoint-up(sm) {
+//     max-width: 90%;
+//   }
+// }
+
+// .image-container {
+//   height: 120px;
+//   width: 120px;
+//   border: 3px solid $image-outline;
+
+//   @include media-breakpoint-down(md) {
+//     height: 100px;
+//     width: 100px;
+//   }
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+// .text-dark-green {
+//   color: $dark-green;
+// }
+
+// // certificate-background-color
+// .bg-blue-light {
+//   background-color: $blue-light  !important;
+// }
+
+// // profile-detail
+// .profile-detail {
+//   font-size: 20px;
+
+//   @include media-breakpoint-down (sm) {
+//     font-size: $font-size-base-sm;
+//   }
+
+//   .file-title {
+//     font-size: $file-title-size;
+//   }
+
+//   .user-email {
+//     max-width: 90%;
+//   }
+
+// }
+
+// // End: pharmacy-view-profile
+
+// // Start: pharmacy-edit-profile
+
+// // disable file
+// .certificate-file-bg {
+//   background-color: $institute-certificate-bg;
+// }
+
+// // End: pharmacy-edit-profile

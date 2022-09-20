@@ -1,0 +1,36 @@
+<div class="bg-light p-5 border-radius">
+    <div class="d-flex align-items-center justify-content-center mb-5">
+        <h2>{{formTitle}}</h2>
+    </div>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+        <!-- task name -->
+        <div class="form-group d-flex align-items-center my-4">
+            <label class="col-4" for="taskName">Task Name : </label>
+            <input type="text" class="form-control" id="taskName" placeholder="Enter Task Name"
+                formControlName="taskName">
+        </div>
+        <!-- status -->
+        <div class="form-group d-flex align-items-center my-4">
+            <label class="col-4" for="status">Status : </label>
+            <select class="form-select" id="status" formControlName="status">
+                <option [value]="0" disabled>Select Status</option>
+                <option *ngFor="let status of statusList" [value]="status.status">{{status.id | status : statusList}}
+                </option>
+            </select>
+        </div>
+        <!-- priority -->
+        <div class="form-group d-flex align-items-center my-4">
+            <label class="col-4" for="priority">Priority : </label>
+            <select class="form-select" id="priority" formControlName="priority">
+                <option [value]="0" disabled>Select Status</option>
+                <option *ngFor="let priority of priorityList" [value]="priority.priority">{{priority.id | priority :
+                    priorityList}}
+                </option>
+            </select>
+        </div>
+        <div class="text-end mt-5">
+            <button class="btn btn-success text-light">Submit</button>
+            <button class="btn btn-danger text-light ms-2" (click)="onCancel()">Cancel</button>
+        </div>
+    </form>
+</div>

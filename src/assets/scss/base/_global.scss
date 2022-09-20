@@ -1,0 +1,95 @@
+// Global styles goes here
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     overflow-anchor: none;
+// }
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+// .unselectable {
+//     pointer-events: none;
+//     -webkit-user-drag: none;
+//     user-select: none;
+//     -moz-user-select: none;
+//     -webkit-user-select: none;
+//     -ms-user-select: none;
+// }
+
+/// Fix for google chart tooltip flickering.
+// svg > g > g.google-visualization-tooltip {
+//     pointer-events: none;
+// }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: $secondary transparent;
+    scrollbar-width: thin;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: $secondary transparent;
+    scrollbar-width: thin;
+}
+
+.overflow-auto {
+    scrollbar-color: $secondary transparent;
+    scrollbar-width: thin;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.fs-xs {
+    font-size: 0.75rem;
+}
+
+.scroll-gutter-stable {
+    scrollbar-gutter: stable;
+}
+
+.w-0 {
+    width: 0px;
+}
+
+.min-h-100 {
+    min-height: 100%;
+}
+
+.transition {
+    transition: $transition-timing all;
+}
+
+.border-radius {
+    border-radius: $border-radius;
+}

@@ -1,0 +1,29 @@
+.toast-container {
+    width: 250px;
+    pointer-events: all !important;
+
+    .toast {
+        background-color: $white;
+        color: $danger;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border: 1px solid transparent;
+        border-left-width: 5px;
+        border-radius: 12px;
+
+        &-error {
+            border-color: $danger;
+            background-image: none;
+        }
+
+        &-success {
+            border-color: $primary;
+            color: $primary;
+            background-image: none;
+        }
+
+        &-close-button {
+            color: $secondary;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<div class="h-100 d-flex flex-column container-fluid p-4">
+    <div class="py-3 text-end">
+        <button class="btn btn-primary" (click)="openTaskForm()">Add Task</button>
+    </div>
+    <div class="p-5 flex-grow-1 overflow-hidden">
+        <div class="row">
+            <div class="col-4 py-4 d-flex flex-column">
+                <h4 class="mb-4">Todo List</h4>
+                <div class="bg-secondary p-4 border-radius flex-grow-1 overflow-auto">
+                    <ng-container *ngFor="let task of todoList; let i = index">
+                        <div class="card my-2">
+                            <p>{{task?.taskName}}</p>
+                            <p>{{task?.priority}}</p>
+                        </div>
+                    </ng-container>
+
+                </div>
+            </div>
+            <div class="col-4 py-4 d-flex flex-column">
+                <h4 class="mb-4">Active List</h4>
+                <div class="bg-secondary p-4 border-radius flex-grow-1 overflow-auto">
+                    <ng-container *ngFor="let task of activeList; let i = index">
+                        <div class="card my-2">
+                            <p>{{task?.taskName}}</p>
+                            <p>{{task?.priority}}</p>
+                        </div>
+                    </ng-container>
+                </div>
+
+            </div>
+            <div class="col-4 py-4 d-flex flex-column">
+                <h4 class="mb-4">Completed List</h4>
+                <div class="bg-secondary p-4 border-radius flex-grow-1 overflow-auto">
+                    <ng-container *ngFor="let task of completedList; let i = index">
+                        <div class="card my-2">
+                            <p>{{task?.taskName}}</p>
+                            <p>{{task?.priority}}</p>
+                        </div>
+                    </ng-container>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

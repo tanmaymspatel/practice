@@ -1,0 +1,8 @@
+.list-heading {
+    border-bottom: 3px solid;
+    .list-count{
+        padding: 5px 15px;
+        background-color : rgba($dark, 20%);
+        border-radius: $circle-radius;
+    }
+}

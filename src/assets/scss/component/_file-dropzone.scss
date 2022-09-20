@@ -1,0 +1,28 @@
+.dropzone{
+    border:2px dashed $info;
+    width: 100%;
+    background-color: rgba($info, 10%);
+    border-radius: 20px;
+
+    @include media-breakpoint-up(xl){
+        height: 300px;
+    }
+}
+
+.drag-area{
+    height: 70%;
+
+    @include media-breakpoint-up(xl){
+        height: 100%;
+    }
+
+    @include media-breakpoint-up(lg){
+        height: 80%;
+    }
+    
+}
+
+.divider{
+    width: 50px;
+    height: 0px;
+}

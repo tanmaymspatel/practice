@@ -1,0 +1,57 @@
+/* Role icons font size */
+/*mobile responsive font size for role icon */
+
+.role-icon {
+    font-size: 4rem;
+
+    @include media-breakpoint-up(md) {    
+        padding: 0 1.25rem;
+    }
+}
+/* end*/
+
+
+/* Role wrapper style */
+
+.role-wrapper {
+    margin-top: 2rem;
+    .welcome-title {
+        font-weight: 500;
+
+        @include media-breakpoint-up(md) {
+            font-size: 2.25rem;
+        }
+    }
+    // card container top padding style
+    .role {
+        padding-top: 3rem;
+
+        /*resposive above the mobile size*/
+        @include media-breakpoint-up(md) {
+            padding: 5.5rem 0;
+        }
+    }
+    .card-outline {
+        /* use card outline to show the active effect on card*/
+        outline: 1px solid transparent;
+    }
+}
+
+/* role hovor and active effect start */
+.role-name {
+    font-size: 1.125rem;
+}
+.role-icon,.role-name{
+    color: $muted;
+}
+
+.role-card:hover,
+.role-card.active {
+    border-color: $primary;
+    outline: 1px solid $primary;
+    transition: 0.4s;
+    .role-icon,
+    .role-name {
+        color: $primary !important;
+    }
+}

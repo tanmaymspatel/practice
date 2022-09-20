@@ -1,0 +1,131 @@
+#sidebar{
+    flex: 0 0 $sidebar-width;
+    background-color: $light;
+    border-right: 1px solid $dark;
+    .sidebar-header{
+        height: $sideheader-height;
+    }
+    .nav-link{
+        border-radius: $border-radius;
+        &.active, &:hover{
+            background-color: $primary;
+            color: $light;
+        }
+    }
+}
+
+.active{
+    background-color: $primary;
+    color: $light;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #sidebar {
+//     flex: 0 0 $sidebar-width;
+//     width: $sidebar-width;
+//     box-shadow: $sidebar-box-shadow;
+//     position: relative;
+//     z-index: 999;
+//     transition: $sidebar-transition;
+
+//     @include media-breakpoint-down(xl) {
+//         @include position($left: -$sidebar-width);
+//     }
+
+// }
+
+// .nav {
+//     // nav-link active
+//     .active {
+//         background-color: $nav-link-bg;
+//         color: $nav-link-hover-color;
+//         font-weight: $font-weight-bold;
+//     }
+
+//     // brand logo
+//     &-brand-logo {
+//         flex: 0 0 $nav-brand-logo-height;
+//         max-height: $nav-brand-logo-height;
+//         font-size: $brand-logo-font-size;
+//         font-weight: $font-weight-bold;
+
+//         @include media-breakpoint-down(sm) {
+//             font-size: $brand-logo-sm-font-size;
+//         }
+
+//         @include media-breakpoint-down(xl) {
+//             justify-content: center;
+//         }
+//     }
+
+//     // nav-link
+//     &-link {
+//         font-size: 1rem;
+//         padding: 0.75rem 1.5rem;
+//         font-weight: 400;
+//         border-radius: $nav-link-border-radius;
+
+//         @include media-breakpoint-down(sm) {
+//             font-size: $nav-link-sm-font-size;
+//         }
+
+//         &:hover {
+//             background-color: $nav-link-bg;
+//             color: $nav-link-hover-color;
+//         }
+//     }
+
+//     // sidebar user-profile
+//     .sidebar-user-profile {
+//         width: $user-profile-width;
+//     }
+// }
+
+// .sidebar-logo {
+//     width: $sidebar-logo-size;
+//     height: $sidebar-logo-size;
+
+//     @include media-breakpoint-down(sm) {
+//         width: $sidebar-logo-size-sm;
+//         height: $sidebar-logo-size-sm;
+//     }
+
+//     img {
+//         max-width: 100%;
+//         height: auto;
+//         vertical-align: top;
+//     }
+// }
+
+// // sidebar toggle
+// #checkmark:checked~ {
+//     & .main-wrapper {
+
+//         @include media-breakpoint-down(xl) {
+//             filter: blur(4px);
+//             pointer-events: none;
+//         }
+//     }
+
+//     & #sidebar {
+//         left: 0px;
+//         backdrop-filter: blur(8px);
+
+//         @include media-breakpoint-down(sm) {
+//             height: 100%;
+//             width: 100%;
+//         }
+//     }
+// }

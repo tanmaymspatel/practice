@@ -1,0 +1,70 @@
+.card {
+    padding: 1rem 2rem;
+    background-color: $info;
+    color: $light;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 7px 1px rgba($dark, 0.15);
+    }
+}
+
+
+// .card-certificate {
+//     background-color: #fff;
+//     border-radius: $border-radius;
+//     height: 700px;
+//     width: 1200px;
+//     flex-direction: column;
+
+//     @include media-breakpoint-down(xl) {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+// .card-prescription-img {
+//     object-fit: fill;
+//     height: 50px;
+//     width: 50px;
+// }
+// .certificate-overlay-backdrop {
+//     background: rgba($dark, 0.5);
+//     backdrop-filter: saturate(180%) blur(5px);
+
+//     @include media-breakpoint-down(md) {
+//         backdrop-filter: saturate(180%) blur(2px);
+//     }
+// }
+
+// .frame {
+//     height: 100%;
+//     margin: 0 auto;
+
+//     @include media-breakpoint-down(md) {
+//         width: 100%;
+//         height: auto;
+//     }
+// }
+
+// .frame-pdf{
+//     width: 100%;
+//     height: auto;
+// }
+
+// .cdk-overlay-pane {
+//     display: block;
+
+//     @include media-breakpoint-down(xl) {
+//         width: 90%;
+//         height: 90%;
+//     }
+
+//     @include media-breakpoint-down(sm) {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// .text-patient-card-bg {
+//     background-color: $patient-card-bg;
+// }

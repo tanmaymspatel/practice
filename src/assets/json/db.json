@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Tanmay Patel",
+      "city": "Surat",
+      "birthPlace": "Pardi",
+      "age": 26,
+      "skills": [
+        {
+          "fullName": "",
+          "designation": "",
+          "email": "",
+          "mobileNumber": "",
+          "profile": "",
+          "technicalSkills": [
+            {
+              "techSkillName": ""
+            }
+          ]
+        },
+        {
+          "fullName": "aa",
+          "designation": "Free Lancer",
+          "email": "shusi@gmail.com",
+          "mobileNumber": 313131321321,
+          "profile": "aaa",
+          "technicalSkills": [
+            {
+              "techSkillName": "dsdsd"
+            },
+            {
+              "techSkillName": "scxc"
+            },
+            {
+              "techSkillName": "dcdc"
+            }
+          ]
+        },
+        {
+          "fullName": "John Doesssdfferfref",
+          "designation": "Free Lancer dfsdcd",
+          "email": "shusi@gmail.com.in",
+          "mobileNumber": 31313777777,
+          "profile": "Developer",
+          "technicalSkills": [
+            {
+              "techSkillName": "rreerr"
+            },
+            {
+              "techSkillName": "iuhrfnibbv"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "activeList": [
+        {
+          "id": 1,
+          "taskName": "hello",
+          "status": "active",
+          "priority": "low",
+          "completedSubTasks": [],
+          "totalSubTasks": []
+        }
+      ],
+      "todoList": [
+        {
+          "id": 1,
+          "status": "todo",
+          "taskName": "task",
+          "priority": "low",
+          "completedSubTasks": [],
+          "totalSubTasks": []
+        },
+        {
+          "taskName": "task",
+          "status": "todo",
+          "priority": "low",
+          "completedSubTasks": [],
+          "totalSubTasks": []
+        }
+      ],
+      "completedList": [
+        {
+          "id": 1,
+          "status": "completed",
+          "taskName": "task",
+          "priority": "high",
+          "completedSubTasks": [],
+          "totalSubTasks": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "activeList": [],
+      "todoList": [],
+      "completedList": []
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "status": "todo"
+    },
+    {
+      "id": 2,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "status": "completed"
+    }
+  ],
+  "priority": [
+    {
+      "id": 1,
+      "priority": "low"
+    },
+    {
+      "id": 2,
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "priority": "high"
+    }
+  ]
+}

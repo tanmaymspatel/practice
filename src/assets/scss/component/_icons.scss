@@ -1,0 +1,90 @@
+.icon {
+    display: block;
+    font-size: 1.125rem;
+}
+
+.icon-attachment-label,
+.eye-icon {
+    top: 16px;
+    background: $white;
+}
+
+.countryCode {
+    top: 13px;
+    font-size: 1rem;
+    background: $white;
+}
+
+.countryCode-small {
+    font-size: 0.875rem;
+}
+
+.institute-certificate-edit {
+    @include position($top: 15px, $left: 16px);
+    color: $secondary;
+}
+
+.degree-certificate-edit {
+    @include position($top: 16px, $left: 16px);
+}
+
+.certificate-attachment {
+    color: $primary;
+    background-color: $doctor-certificate-bg;
+}
+
+// Sidebar icons
+.side-icon {
+    font-size: 1.25rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.25rem;
+    }
+}
+
+.side-icon-create-prescription {
+    font-size: .75rem;
+}
+
+.sidebar-toggle {
+    font-size: 1.5rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.25rem;
+    }
+}
+
+.close-sidebar {
+    @include media-breakpoint-down(xl) {
+        font-size: 2rem;
+        @include position($top: .75rem, $left: 1.25rem);
+    }
+}
+
+// header icons
+.icon-header-search {
+    font-size: 1.25rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.125rem;
+    }
+}
+
+.icon-signout{
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.delete-popup-icon {
+    @include position(absolute, 30px, 30px)
+}
+
+//created prescription list icon
+.prescription-icon {
+    flex-shrink: 0;
+    height: $list-img-size;
+    width: $list-img-size;
+    border-radius: 50%;
+    background-color: $icon-bg;
+}

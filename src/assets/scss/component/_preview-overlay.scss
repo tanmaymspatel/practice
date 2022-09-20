@@ -1,0 +1,54 @@
+.overlay-wrapper {
+    border-radius: 20px;
+    width: 600px;
+    z-index: 1;
+    height: 100%;
+    color: $dark-green;
+    overflow: auto;
+
+    .overlay {
+        height: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+    &::before {
+        content: "";
+        background-image: url("~/assets/images/1medify.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 300px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.04;
+        z-index: -1;
+    }
+}
+.upload-prescription-form {
+    border-radius: 20px;
+    width: 525px;
+    height: 100%;
+    color: $dark-green;
+    overflow: auto;
+    padding: 2rem;
+
+    .overlay {
+        height: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 90%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        border-radius: 0;
+    }
+}

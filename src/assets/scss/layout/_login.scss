@@ -1,0 +1,206 @@
+// // Uploaded-prescription :Start
+// // .uploaded-prescription-container {
+//     // border-radius: $border-radius;
+
+//     .prescription-list {
+//         @include media-breakpoint-down(sm) {
+//             font-size: 0.75rem;
+//         }
+
+//         &:hover {
+//             background: $list-item-hover;
+//         }
+
+//         .icon-bg {
+//             height: 50px;
+//             width: 50px;
+
+//             @include media-breakpoint-down(sm) {
+//                 height: 30px;
+//                 width: 30px;
+//             }
+
+//             background-color:$list-item-hover;
+//             border-radius: 50%;
+
+//             &:hover {
+//                 cursor: pointer;
+//             }
+
+//             .icon-prescription {
+//                 font-size: 1.75rem;
+
+//                 @include media-breakpoint-down(sm) {
+//                     font-size: 1.25rem;
+//                 }
+//             }
+
+//         }
+
+//         .list-item-duration {
+//             font-size: 0.75rem;
+//             color: $muted;
+
+//             @include media-breakpoint-down(sm) {
+//                 font-size: 0.5rem;
+//             }
+//         }
+//     }
+// // }
+
+// .list-item-status {
+//     color: $muted;
+// }
+
+// .pharmacy-name {
+//     font-size: $font-size-base;
+
+//     @include media-breakpoint-down(sm) {
+//         font-size: $font-size-base-sm;
+//     }
+// }
+
+// // .prescription-image-container {
+// //     .prescription-image {
+// //         max-width: 100%;
+// //         object-fit: contain;
+// //     }
+// // }
+
+// .view-diseases {
+//     color: $dark-green;
+// }
+
+// // Uploaded-prescription :End
+
+// // created prescription :Start
+// .selected-list {
+//     background-color: $list-item-hover;
+// }
+
+// .created-prescription-container :hover {
+//     background-color: $list-item-hover;
+// }
+
+// //Start:Tabs view
+// .tabs-container {
+//     list-style-type: none;
+//     margin-bottom: 4px;
+
+//     .tabs-link {
+//         padding: 20px;
+//     }
+// }
+
+// .tabs-list {
+//     position: relative;
+
+//     &.activetab {
+//         color: $primary  !important;
+//         font-weight: 500;
+//     }
+
+//     &::before {
+//         content: '';
+//         transition: all 0.4s;
+//         position: absolute;
+//         bottom: -0.75rem;
+//         height: 3px;
+//         width: 0;
+//         background-color: $primary;
+//     }
+
+//     &.activetab::before {
+//         width: 100%;
+//     }
+// }
+
+// //End:Tabs view
+
+
+// .tab-heading {
+//     transition: all 0.4s;
+//     margin-left: 2rem;
+//     border-bottom:3px solid transparent;
+//     color: $secondary;
+//     cursor: pointer;
+    
+//     &.tab-active {
+//         pointer-events: none;
+//         color: $primary;
+//         border-bottom:3px solid $primary;
+//     }
+
+//     @include media-breakpoint-down(sm) {
+//         margin-left: .75rem;
+//         font-size: 14px;
+
+//     }
+// }
+
+// .create-prescription-container {
+//     @include media-breakpoint-up(md) {
+//         height: 100%;
+//     }
+// }
+
+// .prescription-preview {
+//     border-radius: 12px;
+// }
+
+// .prescription-date {
+//     font-size: 12px;
+// }
+
+// .approval-status {
+//     color: #F6BE2B;
+// }
+
+// /*approved created prescription scss
+// */
+
+// .prescription-preview {
+//     border-radius: 0.5rem;
+//     z-index: 1;
+//     color: $dark-green;
+
+//     .prescription-table {
+//         font-size: 0.875rem;
+
+//         tr {
+//             td:nth-child(1) {
+//                 max-width: 160px;
+//             }
+
+//             td:nth-child(2) {
+//                 width: 140px;
+//             }
+
+//             td:nth-child(3) {
+//                 max-width: 150px;
+//             }
+//         }
+//     }
+
+
+//     @include media-breakpoint-down(sm) {
+//         border-radius: 0;
+//         width: 100%;
+//         margin: 0;
+//     }
+
+//     &::before {
+//         content: '';
+//         background-image: url('~/assets/images/1medify.png');
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: 300px;
+//         position: absolute;
+//         top: 0px;
+//         right: 0px;
+//         bottom: 0px;
+//         left: 0px;
+//         opacity: 0.04;
+//         z-index: -1;
+//     }
+// }

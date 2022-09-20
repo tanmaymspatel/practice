@@ -1,0 +1,29 @@
+// Base
+@import '~/src/assets/scss/base/index';
+
+// Bootstrap Base 
+@import '~/src/assets/scss/vendor/bootstrap-base';
+
+// Bootstrap Component 
+@import '~/src/assets/scss/vendor/bootstrap-components';
+
+// Project Specific Components
+@import '~/src/assets/scss/component/index';
+
+// Now other style import
+@import '~/src/assets/scss/layout/index';
+
+// Utilies 
+@import '~/src/assets/scss/utilities/index';
+
+// CDk -overlay styles
+@import '@angular/cdk/overlay-prebuilt.css';
+
+// // ngx-bootstrap datepicker
+// @import '~/node_modules/ngx-bootstrap/datepicker/bs-datepicker.scss';
+
+// // Ng-select Theme 
+// @import "~@ng-select/ng-select/themes/default.theme.css";
+
+// // Toastr
+// @import '~node_modules/ngx-toastr/toastr';

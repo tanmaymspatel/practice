@@ -1,0 +1,121 @@
+// Button styles goes here
+.btn {
+    &:disabled {
+        cursor: not-allowed !important;
+    }
+    &:focus {
+        // needed to override box-shadow on focus.
+        box-shadow: none !important;
+    }
+}
+
+.btn-block {
+    width: 100%;
+    box-shadow: 0px 3px 6px $button-shadow-color;
+
+    @include media-breakpoint-up(sm) {
+        width: 200px;
+    }
+}
+
+
+// edit profile button
+.edit-btn-container {
+    box-shadow: 0px 3px 6px $button-shadow-color;
+
+    @include media-breakpoint-down(sm){
+        width: 100%;
+    }
+}
+
+.btn-check:checked+.btn-outline-secondary,
+.btn-check:focus,
+.btn-outline-secondary:hover {
+    color: $primary;
+    background-color: lighten($primary, 72%);
+    box-shadow: none;
+}
+
+.btn-outline-secondary:focus:active {
+
+    box-shadow: none;
+}
+
+// create prescription button
+.btn-create-prescription {
+    padding: $btn-create-prescription;
+    font-size: $btn-create-prescription-font-size;
+    border-radius: $btn-border-radius;
+    box-shadow: 0 0 8px $btn-shadow-color;
+
+    @include media-breakpoint-down(sm) {
+        font-size: .875rem;
+    }
+}
+
+// sign-out button
+.sign-out {
+    @include media-breakpoint-down(sm) {
+        font-size: $btn-sign-out-font-size;
+        padding: $btn-sign-out-padding;
+        color: $nav-link-hover-color;
+        font-weight: $font-weight-bold;
+    }
+}
+
+// user-profile
+.btn-edit-profile {
+    @include media-breakpoint-down(md) {
+        justify-content: center;
+    }
+}
+
+.btn-edit {
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-base-sm;
+        padding: 0.875rem;
+        align-items: center;
+    }
+
+}
+
+.btn-outline-info:hover {
+    color: $info;
+    background-color: lighten($white, 72%);
+    box-shadow: 0 0 20px $btn-shadow-color;
+}
+
+// uploaded prescription
+.btn-uploaded-prescription {
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+}
+
+//prescription button responsive css:start
+.send-approval-btn {
+    @include media-breakpoint-down(xxl) {
+        padding: 0.65rem 1.25rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.65rem 3rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        // used bootstrap class in html to override them so used !important
+        margin-left: 2.25rem !important;
+    }
+}
+
+.send-approval-btn,
+.print-btn,
+.number-submit-btn {
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+//prescription button responsive css:end
